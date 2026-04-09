@@ -1,0 +1,81 @@
+/* ---- Css da galeria ----*/
+
+/* ---- Thumbnails ----*/
+    .thumbs img {
+      width: 100px;
+      height: 50px;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s;
+      border: 2px #2563eb solid;
+      margin-top: 5px;
+      margin-left: -10px;
+    }
+
+    .thumbs img:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    /* ---- Lightbox (Modal Css) ---- */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+
+      display: none;
+      align-items: center;
+      justify-content: center;
+
+      z-index: 9999;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    /* ---- Botão fechar ---- */
+    .fechar {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      font-size: 35px;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* ---- Navegação ---- */
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      transition: 0.3s;
+    }
+
+    .nav:hover {
+      color: #0d6efd;
+    }
+
+    .prev {
+      left: 20px;
+    }
+
+    .next {
+      right: 20px;
+    }
