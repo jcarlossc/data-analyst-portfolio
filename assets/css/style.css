@@ -4,6 +4,10 @@
   	--light: #f1f5f9;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   	font-family: 'Segoe UI', sans-serif;
   	scroll-behavior: smooth;
