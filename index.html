@@ -28,7 +28,7 @@
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    
+
                     <!-- Menu suspenso -->
                     <div id="menu" class="collapse navbar-collapse">
                         <ul class="navbar-nav ms-auto">
@@ -62,6 +62,35 @@
                 </div>
             </section>
 
+            <!-- Seção Sobre -->
+            <section id="sobre" class="section">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <!-- Imagem -->
+                        <div class="col-md-5" data-aos="fade-right">
+                            <img src="assets/img/4561558_4604.jpg" class="img-fluid rounded-4 shadow">
+                        </div>
+
+                        <!-- Texto -->
+                        <div class="col-md-7" data-aos="fade-left">
+                            <h2 class="fw-bold about-text">Sobre mim</h2>
+                            <p class="mt-3 fs-5">Olá, sou Carlos.</p>
+                            <p class="mt-3 fs-5">
+                                Ajudo empresas e projetos a transformar dados em informações claras e úteis para tomada de decisão.
+                            </p>
+                            <p class="mt-3 fs-5">
+                                Atualmente em transição para Ciência de Dados, desenvolvo soluções completas utilizando linguagens Python e R, desde a coleta e tratamento até a análise e visualização dos dados.
+                            </p>
+                            <p class="mt-3 fs-5">
+                                Estou aberto a oportunidades profissionais e também disponível para projetos freelance na área de dados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
 
         </main>    
 
@@ -73,5 +102,21 @@
         <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+        <script>
+            // Script responsável por configurar e criar animações quando 
+            // os elementos aparecem na tela ao rolar a página
+
+            // Configuração
+            AOS.init({ duration: 800, once: true });
+
+            // Monitoramento
+            window.addEventListener('scroll', () => {
+                const nav = document.getElementById('navbar');
+                nav.classList.toggle('scrolled', window.scrollY > 50);
+            });
+        </script>
     </body>    
 </html>    
