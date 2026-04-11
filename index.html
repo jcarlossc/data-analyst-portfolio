@@ -90,16 +90,18 @@
                 <div class="container">
                     <h2 class="text-center fw-bold mb-5" data-aos="fade-up">Projetos</h2>
                     <div class="row g-4">
+
                         <!-- Card projeto 1 -->
                         <div class="col-md-4" data-aos="zoom-in">
                             <div class="card p-4 border-0">
-                                <h5 class="fw-bold">Relatório IBGE</h5>
-                                <p>Indicadores econômicos.</p>
+                                <h5 class="fw-bold">Pipeline ETL em R</h5>
+                                <p>Acidentes de Trânsito.</p>
                                 <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#meuModal01">
                                     Ver
                                 </button>
                             </div>
                         </div>
+
                         <!-- Card projeto 2 -->
                         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
                             <div class="card p-4 border-0">
@@ -113,8 +115,8 @@
                         <!-- Card projeto 3 -->
                         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
                             <div class="card p-4 border-0">
-                                <h5 class="fw-bold">Análise</h5>
-                                <p>Insights com dados.</p>
+                                <h5 class="fw-bold">API IBGE em R</h5>
+                                <p>Geração de Relatório.</p>
                                 <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#meuModal03">
                                     Ver
                                 </button>
@@ -185,6 +187,113 @@
 
                 <!-- Modal Projeto 1 -->
                 <div class="modal fade" id="meuModal01" tabindex="-1">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+
+                            <!-- Título modal -->
+                            <div class="modal-header head-modal">
+                                <h5 class="modal-title text-light">📊 PIPELINE ETL – Sistema de Ingestão, Padronização, Limpeza e Validação de Dados</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body p-4 p-md-4">
+                                
+                                <!-- Descrição -->
+                                <p class="fw-bold">
+                                    Pipeline de engenharia de dados desenvolvido em R para ingestão, padronização, limpeza e validação de dados de acidentes de trânsito da cidade de Recife (2019).
+                                </p>
+
+                                <!-- Tecnologias -->
+                                <h6 class="fw-bold mt-2">🛠️ Tecnologias</h6>
+                                <span class="badge bg-primary">R</span>
+                                <span class="badge bg-primary">yaml</span>
+                                <span class="badge bg-primary">dplyr</span>
+                                <span class="badge bg-secondary">logger</span>
+                                <span class="badge bg-success">stringr</span>
+                                <span class="badge bg-dark">lubridate</span>
+                                <span class="badge bg-info text-dark">glue</span>
+                                <span class="badge bg-info text-dark">hms</span>
+                                <span class="badge bg-info text-dark">readr</span>
+                                <span class="badge bg-info text-dark">RStudio</span>
+                                <span class="badge bg-info text-dark">R Markdown</span>
+
+                                <!-- Funcionalidades -->
+                                <h6 class="fw-bold mt-2">⚙️ Funcionalidades</h6>
+                                <ul>
+                                    <li>Ingestão de dados
+                                        <ul>
+                                            <li>Ler dados brutos (raw data) e garantir integridade estrutural mínima</li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li>Padronização
+                                        <ul>
+                                            <li>Padronização de nomes, conversão de tipos (data, hora) e normalização de variáveis textuais</li>
+                                        </ul>
+                                    </li>
+                                    <li>Limpeza
+                                        <ul>
+                                            <li>Normalização de textos vazios e substituição de NA ou strings em variáveis numéricas quando aplicável</li>
+                                        </ul>
+                                    </li>
+                                    <li>Validação
+                                        <ul>
+                                            <li>Validação de todo pipeline</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <!-- Resultado -->
+                                <h6 class="fw-bold mt-1">📈 Resultados</h6>
+                                <p>
+                                    Resumidamente, o fluxo coleta, padroniza, limpa e valida os dados e gera um arquivo CSV pronto para análise de dados ou implementação de Dashboard.
+                                </p>
+
+                                <!-- Botões Relatório e GitHub -->
+                                <div class="d-flex gap-2">
+                                    <a href="https://github.com/jcarlossc/accident-analytics-pipeline-r/" 
+                                        target="_blank" 
+                                        class="btn btn-dark btn-sm">
+                                        <i class="bi bi-github"></i> GitHub
+                                    </a>
+                                </div>
+                            </div>  
+
+                            <!-- Footer modal -->
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal"> Fechar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <!-- Fim Modal projeto 1 -->
+
+                <!-- Modal Projeto 2 -->
+                <div class="modal fade" id="meuModal02" tabindex="-1">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+
+                            <!-- Título modal -->
+                            <div class="modal-header head-modal">
+                                <h5 class="modal-title text-light">Projeto de Dados</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <p>Modal projeto 2.</p>
+                            </div>  
+
+                            <div class="modal-footer">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Modal projeto 2 -->
+
+                <!-- Modal Projeto 3 -->
+                <div class="modal fade" id="meuModal03" tabindex="-1">
                     <div class="modal-dialog modal-fullscreen">
                         <div class="modal-content">
 
@@ -339,51 +448,6 @@
                                     </div>
                                 </div>
                             </div>  
-                            <!-- Footer modal -->
-                            <div class="modal-footer">
-                                <button class="btn btn-danger" data-bs-dismiss="modal"> Fechar
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-                <!-- Fim Modal projeto 1 -->
-
-                <!-- Modal Projeto 2 -->
-                <div class="modal fade" id="meuModal02" tabindex="-1">
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content">
-
-                            <div class="modal-header head-modal">
-                                <h5 class="modal-title text-light">Projeto de Dados</h5>
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                            </div>
-
-                            <div class="modal-body">
-                                <p>Modal projeto 2.</p>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Fim Modal projeto 2 -->
-
-                <!-- Modal Projeto 3 -->
-                <div class="modal fade" id="meuModal03" tabindex="-1">
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content">
-
-                            <div class="modal-header head-modal">
-                                <h5 class="modal-title text-light">Projeto de Dados</h5>
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                            </div>
-
-                            <div class="modal-body">
-                                <p>Modal projeto 3.</p>
-                            </div>
 
                             <div class="modal-footer">
                                 <button class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
