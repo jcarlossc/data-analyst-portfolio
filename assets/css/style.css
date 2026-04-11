@@ -1,3 +1,6 @@
+html, body {
+    overflow-x: hidden;
+}
 :root {
   	--primary: #2563eb;
   	--dark: #0f172a;
