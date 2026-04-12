@@ -1,6 +1,7 @@
-html, body {
-    overflow-x: hidden;
+html {
+  overflow-y: scroll;
 }
+
 :root {
   	--primary: #2563eb;
   	--dark: #0f172a;
@@ -12,6 +13,7 @@ body {
   	scroll-behavior: smooth;
   	background-color: var(--light);
 }
+
 
 .navbar {
   	backdrop-filter: blur(10px);
@@ -31,6 +33,7 @@ body {
   position: relative;
   height: 100vh;
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Partículas */
@@ -116,6 +119,10 @@ footer {
 	background-color: #0f1729;
 }
 
+#margin-close {
+    margin-right: 10px;
+}
+
 @media (max-width: 1000px) {
 	.about-text {
 		text-align: center;
@@ -124,4 +131,8 @@ footer {
 	.link-whatsapp {
 		margin-top: 15px;
 	}
+
+  #margin-close {
+    margin-right: 0;
+  }
 }
