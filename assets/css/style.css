@@ -1,5 +1,5 @@
 html {
-  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 :root {
@@ -33,7 +33,7 @@ body {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  overflow-x: hidden;
+
 }
 
 /* Partículas */
