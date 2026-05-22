@@ -201,7 +201,7 @@
                                 
                                 <!-- Descrição -->
                                 <p class="fw-bold">
-                                    Projeto desenvolvido para consumo de Banco de Dados MySQL, padronização, geração de relatório e DashBoard automatizados utilizando linguagem R.
+                                    Projeto desenvolvido para consumo de Banco de Dados MySQL, geração de relatório e DashBoard automatizados utilizando linguagem R.
                                 </p>
 
                                 <!-- Tecnologias -->
@@ -219,14 +219,17 @@
                                 <span class="badge bg-info text-dark">DBI</span>
                                 <span class="badge bg-info text-dark">RMySQL</span>
                                 <span class="badge bg-info text-dark">shiny</span>
+                                <span class="badge bg-info text-dark">testthat</span>
+                                <span class="badge bg-info text-dark">roxygen2</span>
+                                <span class="badge bg-info text-dark">devtools</span>
                                 <span class="badge bg-info text-dark">Git</span>
                                 <span class="badge bg-info text-dark">GitHub</span>
+                                <span class="badge bg-info text-dark">Servidor Apache</span>
 
                                 <!-- Funcionalidades -->
                                 <h6 class="fw-bold mt-2">⚙️ Funcionalidades</h6>
                                 <ul>
                                     <li>Conexão com Banco de Dados MySQL</li>
-                                    <li>Acesso aos dados e padronização</li>
                                     <li>Geração de métricas para Vendas, Produtos e Vendedores</li>
                                     <li>Execução resiliente com retry automático e Logging estruturado para monitoramento</li>
                                     <li>Geração de relatório e DashBoard</li>
@@ -234,20 +237,17 @@
 
                                 <!-- Resultado -->
                                 <h6 class="fw-bold mt-1">📈 Resultados</h6>
-                                <p>
-                                    Análises exploratória de indicadores econômicos com insights relevantes para tomada de decisão.
-                                </p>
 
                                 <!-- Botões Relatório e GitHub -->
                                 <div class="d-flex gap-2">
-                                    <a href="assets/files/report.pdf" 
+                                    <a href="assets/files/report_sales_pipeline.pdf" 
                                         download="Relatorio_Vendas.pdf" 
                                         target="_blank" 
                                         class="btn btn-outline-primary btn-sm">
                                         <i class="bi bi-file-earmark-pdf"></i> Relatório
                                     </a>
 
-                                    <a href="https://github.com/jcarlossc/pipeline-mysql-rmarkdown/" 
+                                    <a href="https://github.com/jcarlossc/salespipeline/" 
                                         target="_blank" 
                                         class="btn btn-dark btn-sm">
                                         <i class="bi bi-github"></i> GitHub
@@ -255,7 +255,7 @@
                                 </div>
 
                                 <!-- Galeria -->
-                                <h6 class="fw-bold mt-2">🖼️ Exemplos de visualizações do Relatório e DashBoard</h6>
+                                <h6 class="fw-bold mt-2">🖼️ Exemplos de visualizações do Relatório</h6>
                                 <div class="container-fluid">
                                     <!-- Thumbnails -->
                                     <div class="thumbs d-flex flex-wrap gap-3">
@@ -288,15 +288,15 @@
                                         </a>
 
                                         <a href="#vendas8">
-                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_01.png">
+                                            <img src="assets/img/carousel/vendas/report/app_08.png">
                                         </a>
 
                                         <a href="#vendas9">
-                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_02.png">
+                                            <img src="assets/img/carousel/vendas/report/app_09.png">
                                         </a>
 
                                         <a href="#vendas10">
-                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_03.png">
+                                            <img src="assets/img/carousel/vendas/report/app_10.png">
                                         </a>
                                     </div>
 
@@ -362,7 +362,7 @@
                                         <div id="vendas8" class="lightbox">
                                             <a href="#" class="fechar">&times;</a>
                                             <a href="#vendas7" class="nav prev text-primary">&#10094;</a>
-                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_01.png">
+                                            <img src="assets/img/carousel/vendas/report/app_08.png">
                                             <a href="#vendas9" class="nav next text-primary">&#10095;</a>
                                         </div>
 
@@ -370,7 +370,7 @@
                                         <div id="vendas9" class="lightbox">
                                             <a href="#" class="fechar">&times;</a>
                                             <a href="#vendas8" class="nav prev text-primary">&#10094;</a>
-                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_02.png">
+                                            <img src="assets/img/carousel/vendas/report/app_09.png">
                                             <a href="#vendas10" class="nav next text-primary">&#10095;</a>
                                         </div>
 
@@ -378,8 +378,77 @@
                                         <div id="vendas10" class="lightbox">
                                             <a href="#" class="fechar">&times;</a>
                                             <a href="#vendas9" class="nav prev text-primary">&#10094;</a>
-                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_03.png">
+                                            <img src="assets/img/carousel/vendas/report/app_10.png">
                                             <a href="#vendas1" class="nav next text-primary">&#10095;</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h6 class="fw-bold mt-2">🖼️ Exemplos de visualizações do DashBoard</h6>
+                                <div class="container-fluid">
+                                    <!-- Thumbnails -->
+                                    <div class="thumbs d-flex flex-wrap gap-3">
+                                        <a href="#vendas11">
+                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_01.png">
+                                        </a>
+
+                                        <a href="#vendas12">
+                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_02.png">
+                                        </a>
+
+                                        <a href="#vendas13">
+                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_03.png">
+                                        </a>
+
+                                        <a href="#vendas14">
+                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_04.png">
+                                        </a>
+
+                                        <a href="#vendas15">
+                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_05.png">
+                                        </a>
+                                    </div>
+
+                                    <!-- LightBoxes -->
+                                    <div>
+                                        <!-- Img 1 -->
+                                        <div id="vendas11" class="lightbox">
+                                            <a href="#" class="fechar">&times;</a>
+                                            <a href="#vendas10" class="nav prev text-primary">&#10094;</a>
+                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_01.png">
+                                            <a href="#vendas12" class="nav next text-primary">&#10095;</a>
+                                        </div>
+
+                                        <!-- Img 2 -->
+                                        <div id="vendas12" class="lightbox">
+                                            <a href="#" class="fechar">&times;</a>
+                                            <a href="#vendas11" class="nav prev text-primary">&#10094;</a>
+                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_02.png">
+                                            <a href="#vendas13" class="nav next text-primary">&#10095;</a>
+                                        </div>
+
+                                        <!-- Img 3 -->
+                                        <div id="vendas13" class="lightbox">
+                                            <a href="#" class="fechar">&times;</a>
+                                            <a href="#vendas12" class="nav prev text-primary">&#10094;</a>
+                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_03.png">
+                                            <a href="#vendas14" class="nav next text-primary">&#10095;</a>
+                                        </div>
+
+                                        <!-- Img 4 -->
+                                        <div id="vendas14" class="lightbox">
+                                            <a href="#" class="fechar">&times;</a>
+                                            <a href="#vendas13" class="nav prev text-primary">&#10094;</a>
+                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_04.png">
+                                            <a href="#vendas15" class="nav next text-primary">&#10095;</a>
+                                        </div>
+
+                                        <!-- Img 5 -->
+                                        <div id="vendas15" class="lightbox">
+                                            <a href="#" class="fechar">&times;</a>
+                                            <a href="#vendas14" class="nav prev text-primary">&#10094;</a>
+                                            <img src="assets/img/carousel/vendas/dashboard/dashboard_05.png">
+                                            <a href="#vendas11" class="nav next text-primary">&#10095;</a>
                                         </div>
                                     </div>
                                 </div>
